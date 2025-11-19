@@ -1,11 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import CategorySection from '@/components/section/CategorySection.vue';
+import PromoSection from '@/components/section/PromoSection.vue';
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <CategorySection class="quicksand" />
+  <PromoSection class="quicksand" />
 </template>
 
 <style scoped></style>

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "label": "vegetables",
+    "stock": 15,
+    "imagePath": "/category-images/category-image-1.png"
+  },
+  {
+    "id": 2,
+    "label": "red apple",
+    "stock": 53,
+    "imagePath": "/category-images/category-image-2.png"
+  },
+  {
+    "id": 3,
+    "label": "peach",
+    "stock": 25,
+    "imagePath": "/category-images/category-image-3.png"
+  },
+  {
+    "id": 4,
+    "label": "organic kiwi",
+    "stock": 15,
+    "imagePath": "/category-images/category-image-4.png"
+  },
+  {
+    "id": 5,
+    "label": "hamburger",
+    "stock": 63,
+    "imagePath": "/category-images/category-image-5.png"
+  },
+  {
+    "id": 6,
+    "label": "cake & milk",
+    "stock": 72,
+    "imagePath": "/category-images/category-image-6.png"
+  },
+  {
+    "id": 7,
+    "label": "headphones",
+    "stock": 71,
+    "imagePath": "/category-images/category-image-7.png"
+  },
+  {
+    "id": 8,
+    "label": "snacks",
+    "stock": 32,
+    "imagePath": "/category-images/category-image-8.png"
+  },
+  {
+    "id": 9,
+    "label": "black plum",
+    "stock": 76,
+    "imagePath": "/category-images/category-image-9.png"
+  },
+  {
+    "id": 10,
+    "label": "orange",
+    "stock": 25,
+    "imagePath": "/category-images/category-image-10.png"
+  }
+]

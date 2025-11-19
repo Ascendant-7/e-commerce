@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "label": "Everyday Fresh & Clean with Our Products",
+    "imagePath": "/promotion-images/promotion-image-1.png"
+  },
+  {
+    "id": 1,
+    "label": "Make your Breakfast Healthy and Easy",
+    "imagePath": "/promotion-images/promotion-image-2.png"
+  },
+  {
+    "id": 2,
+    "label": "The best Organic Products Online",
+    "imagePath": "/promotion-images/promotion-image-3.png"
+  }
+]

@@ -2,7 +2,7 @@
   <UiCard class="card">
     <div class="promo-desc">
       <h5 class="promo-label">{{ label }}</h5>
-      <UiButton class="quicksand" :label="`Shop Now &rarr;`"></UiButton>
+      <ShopButton :promotion="label" />
     </div>
     <div class="img-box">
       <img ref="img" class="img" :src="imgPath" :alt="imgPath" />
@@ -13,7 +13,7 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 import UiCard from '@/components/ui/UiCard.vue'
-import UiButton from '@/components/ui/UiButton.vue'
+import ShopButton from './ShopButton.vue'
 
 // properties
 defineProps<{

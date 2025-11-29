@@ -1,27 +1,26 @@
 <template>
-  <UiCard
-    class="card center-items"
+  <div
+    class="card"
     :class="{ highlighted: isHovered }"
     :style="{ backgroundColor: bgColor, outline: `${isHovered ? 2 : 0}px solid ${outlineColor}` }"
     @mouseover="isHovered = true"
     @mouseleave="isHovered = false"
   >
     <!-- image container and content -->
-    <div class="img-box center-items">
-      <img ref="img" class="img" :src="imgPath" :alt="cardLabel" @load="onImageLoad" />
+    <div class="img-box flex-center">
+      <img ref="img" :src="imgPath" :alt="cardLabel" @load="onImageLoad" />
     </div>
     <!-- description container and content -->
-    <div class="desc center-items">
+    <div class="desc flex-center">
       <p class="label" :style="{ color: labelColor }">{{ cardLabel }}</p>
       <p class="sublabel" :style="{ color: subLabelColor }">{{ cardSubLabel }}</p>
     </div>
-  </UiCard>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { defineProps, ref } from 'vue'
-import '@/assets/main.css'
-import UiCard from '@/components/ui/UiCard.vue'
+import { ref } from 'vue'
+import '@/assets/main.scss'
 import useDominantColor from '@/composables/useDominantColor.ts'
 
 // properties
@@ -44,7 +43,7 @@ const { bgColor, outlineColor, labelColor, subLabelColor, getDominantColor } = u
 const onImageLoad = () => getDominantColor(img.value)
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .card {
   /* dimension */
   width: 100px;
@@ -69,6 +68,9 @@ const onImageLoad = () => getDominantColor(img.value)
 
   /* behavior */
   overflow: hidden;
+
+  /* color */
+  background-color: #f5f5f5;
 }
 
 .desc {

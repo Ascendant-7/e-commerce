@@ -1,18 +1,17 @@
 <template>
-  <UiCard class="card">
-    <div class="promo-desc">
-      <h5 class="promo-label">{{ label }}</h5>
+  <div class="card">
+    <div class="desc">
+      <h5 class="label">{{ label }}</h5>
       <ShopButton :promotion="label" />
     </div>
     <div class="img-box">
       <img ref="img" class="img" :src="imgPath" :alt="imgPath" />
     </div>
-  </UiCard>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
-import UiCard from '@/components/ui/UiCard.vue'
+import '@/assets/main.scss'
 import ShopButton from './ShopButton.vue'
 
 // properties
@@ -22,7 +21,7 @@ defineProps<{
 }>()
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .card {
   /* dimension */
   height: 250px;

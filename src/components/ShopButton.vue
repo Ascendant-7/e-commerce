@@ -1,10 +1,8 @@
 <template>
-  <UiButton label="Shop Now &rarr;" @click="ShopNow(promotion)"></UiButton>
+  <button @click="ShopNow(promotion)">Shop Now &rarr;</button>
 </template>
 
 <script setup lang="ts">
-import UiButton from '../ui/UiButton.vue'
-
 // properties
 defineProps<{
   promotion: string
